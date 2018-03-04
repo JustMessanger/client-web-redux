@@ -5,12 +5,9 @@ import RouterPath from './../constants/RouterPath';
 
 import BaseContainer from './base/BaseContainer';
 import LoginContainer from './LoginContainer';
+import StartContainer from './StartContainer';
 
 export default class RouterContainer extends BaseContainer {
-    constructor() {
-        super();
-    }
-
     render() {
         return (
             <div>
@@ -19,7 +16,7 @@ export default class RouterContainer extends BaseContainer {
                         path={RouterPath.LOGIN}
                         component={LoginContainer}
                     />
-                    <Route exact path="/" component={LoginContainer} />
+                    <Route exact path="/" component={StartContainer} />
                     <Route component={LoginContainer} />
                 </Switch>
             </div>
