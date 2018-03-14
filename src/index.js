@@ -16,6 +16,7 @@ import './less/main.less';
 const store = configureStore();
 store.runSaga(rootSaga);
 const history = createHashHistory();
+// test
 
 render(
     <Provider
